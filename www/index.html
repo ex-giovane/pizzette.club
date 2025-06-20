@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzette club, il club delle pizzette!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url('background.svg');
+        }
+        .layout {
+        	width: 104em;
+        	margin: auto;
+        }
+        .column {
+        	padding: 1em;
+        	float: left;
+        }
+        .left {
+        	width: 20em;
+        }
+        .right {
+        	width: 80em;
+        }
+
+        @media screen and (max-width: 100em) {
+			.column {
+				width: 100%;
+			}
+			.layout {
+				width: 100%;
+			}
+		}
+
+		@keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        .blink {
+			animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+	<div class="layout">
+		<div class="column left">
+			<p>
+				Menu
+			</p>
+			<p>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="fanzine.html">Fanzine</a></li>
+					<li><a href="raduni.html">Raduni!</a></li>
+					<li><a href="pizze.html">Pizze</a></li>
+				</ul>
+			</p>
+		</div>
+		<div class="column right">
+			<h2>
+				Ciao! Benvenuto nel sito ufficiale del fan club non ufficiale di Power Pizza Podcast!
+			</h2>
+			<p>
+				<span class="blink">NOVITÀ!</span> Il primo numero della <a href="QPHMQM_maggio25.pdf">fanzine delle pizzette!</a>
+			</p>
+			<p>
+				<img src="under-construction-pikachu.gif"/>
+			</p>
+			<p>
+				<img src="pizza-spicchi.gif"/>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
