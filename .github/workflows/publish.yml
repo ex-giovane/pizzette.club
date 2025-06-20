@@ -17,4 +17,4 @@ jobs:
       run: sudo apt install lftp
     - name: 📂 Sync files
       shell: bash
-      run: lftp -u ${{ secrets.ftp_username }},${{ secrets.ftp_password }} -e "mirror -R www/ www/; quit" ftp://${{ secrets.ftp_server }}
+      run: lftp -u ${{ secrets.ftp_username }},${{ secrets.ftp_password }} -e "mirror -R --delete www/ www/; quit" ftp://${{ secrets.ftp_server }}
