@@ -82,7 +82,10 @@ const pizze = [
   { tipo: "Una pizza che ti sei inventatə", pizza: "Marinara con il cornicione ripieno di ricotta", consiglia: "AnteaPolly", nick: "AnteaPolly" },
   { tipo: "La tua pizza prefe", pizza: "4 Formaggi rossa con salame piccante", consiglia: "Bananink", nick: "Bananink" },
   { tipo: "La tua pizza schiferita", pizza: "4 Stagioni", consiglia: "Bananink", nick: "Bananink" },
-  { tipo: "Una pizza che ti sei inventatə", pizza: "Margherita con patatine fritte, salsiccia, salame piccante, prosciutto crudo e parmigiano", consiglia: "Bananink", nick: "Bananink" }
+  { tipo: "Una pizza che ti sei inventatə", pizza: "Margherita con patatine fritte, salsiccia, salame piccante, prosciutto crudo e parmigiano", consiglia: "Bananink", nick: "Bananink" },
+  { tipo: "La tua pizza prefe", pizza: "Speck e brie (bianca)", consiglia: "spkbri", nick: "spkbri" },
+  { tipo: "La tua pizza schiferita", pizza: "Qualsiasi con la rucola o il piccante", consiglia: "spkbri", nick: "spkbri" },
+  { tipo: "Una pizza che ti sei inventatə", pizza: "Margherita surgelata con sopra i bastoncini Findus", consiglia: "spkbri", nick: "spkbri" }
 ];
 
 document.getElementById('spin-btn').addEventListener('click', function() {
@@ -92,3 +95,4 @@ document.getElementById('spin-btn').addEventListener('click', function() {
     <em>Consigliata da ${randomPizza.consiglia}</em>
   `;
 }); 
+
